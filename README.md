@@ -41,3 +41,30 @@ dotnet add package Microsoft.ML
 4. Run the program:
  ```bash
  dotnet run
+ ```
+
+ 
+## 🔗 Further Reading and References
+
+### 📦 ML.NET Samples
+
+- 🔹 [Product Recommendation - Matrix Factorization Problem Sample](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/MatrixFactorization_ProductRecommendation#product-recommendation---matrix-factorization-problem-sample)
+- 🎬 [Movie Recommendation - Matrix Factorization Sample 1 (Program.cs)](https://github.com/dotnet/samples/blob/main/machine-learning/tutorials/MovieRecommendation/Program.cs)
+- 🎬 [Movie Recommendation - Matrix Factorization Sample 2](https://github.com/dotnet/machinelearning-samples/tree/main/samples/csharp/getting-started/MatrixFactorization_MovieRecommendation#movie-recommendation---matrix-factorization-problem-sample)
+
+### 📘 Documentation and Tutorials
+
+- 📄 [What is ML.NET and How Does It Work?](https://learn.microsoft.com/en-us/dotnet/machine-learning/mldotnet-api)
+- ⚙️ [What is Automated Machine Learning (AutoML)?](https://learn.microsoft.com/en-us/dotnet/machine-learning/automated-machine-learning-mlnet)
+- 🛠️ [ML.NET AutoML Model Builder (Step-by-Step Walkthrough)](https://blog.nishanc.com/2023/08/mlnet-automl-model-builder-step-by-step.html)
+- 🚀 [Deploy a Model in an ASP.NET Core Web API](https://learn.microsoft.com/en-us/dotnet/machine-learning/how-to-guides/serve-model-web-api-ml-net)
+
+### 📊 Data & Research
+
+- 🛒 [Amazon Sales Dataset (Kaggle)](https://www.kaggle.com/datasets/karkavelrajaj/amazon-sales-dataset?resource=download)
+- 📑 [Machine Learning at Microsoft with ML.NET (Research Paper)](https://arxiv.org/pdf/1905.05715)
+
+### 🤖 Ecosystem & Showcase
+
+- 🌐 [Open Neural Network Exchange (ONNX)](https://onnx.ai/)
+- 🏢 [Artificial Intelligence & ML Customer Showcase (Microsoft)](https://dotnet.microsoft.com/en-us/platform/customers/machinelearning-ai)

@@ -11,8 +11,10 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Create MLContext to be shared across the model creation workflow objects
         MLContext mlContext = new MLContext();
 
+        // Load data
         (IDataView training, IDataView test) = LoadData(mlContext);
 
         var trainSamples = mlContext.Data.CreateEnumerable<ProductRating>(training, reuseRowObject: false).Take(5);
@@ -21,12 +23,16 @@ class Program
             Console.WriteLine($"User: {row.user_id}, Movie: {row.product_id}, Rating: {row.Label}");
         }
 
+        // Build & train model
         ITransformer model = BuildAndTrainModel(mlContext, training);
 
+        // Evaluate quality of model
         EvaluateModel(mlContext, test, model);
 
+        // Use model to try a single prediction (one row of data)
         UseModelForSinglePrediction(mlContext, model);
 
+        // Save model
         SaveModel(mlContext, training.Schema, model);
     }
 
